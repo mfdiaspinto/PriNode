@@ -1,0 +1,14 @@
+{
+  "name": "PriNodeServer",
+  "version": "0.0.0",
+  "description": "PriNodeServer",
+  "main": "server.js",
+  "author": {
+    "name": "miguel.dias",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.2.0",
+    "underscore": "^1.6.0"
+  }
+}
