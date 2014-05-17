@@ -3,15 +3,20 @@ var express = require("express");
 
 var app = express();
 
+<<<<<<< HEAD
 
 app.get("/", function (req, res) {
     res.send({ name: "Primavera Services" })
 });
+=======
+var controllers = require('./controllers');
+>>>>>>> 8ecd3f31f2888604f51ccbcfe6dab20dcba7cced
 
-app.get("/netsales", function (req, res) {
-    res.send({ value: 120912 })
-});
+//app.get("/", function (req, res) {
+//    res.send({ name: "Primavera Services" })
+//});
 
+<<<<<<< HEAD
 app.get("/netsales/:company", function (req, res) {
     var company = req.params.company;
     if (company == "Demo") {
@@ -21,6 +26,9 @@ app.get("/netsales/:company", function (req, res) {
         res.send({ value: 91119 });
     }
 });
+=======
+controllers.init(app);
+>>>>>>> 8ecd3f31f2888604f51ccbcfe6dab20dcba7cced
 
 var server = http.createServer(app);
 
